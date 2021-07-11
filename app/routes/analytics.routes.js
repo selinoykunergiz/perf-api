@@ -4,6 +4,8 @@ module.exports = app => {
   var router = require("express").Router();
 
   router.post("/", analytics.create);
+  router.get("/getByMin/:min", analytics.getByMin);
+  router.get("/getByDate", analytics.getByDate);
 
   app.use("/api/analytics", router);
 };
