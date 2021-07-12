@@ -57,7 +57,8 @@ exports.getByDate = (req, res) => {
   let start = req.body.start;
   let end = req.body.end;
 
-  var condition = {createdAt : {$gte: new Date(start), $lte: new Date(end) } } 
+
+  var condition = {createdAt : {$gte: start, $lte: end } } 
 
   Analytics.find(condition)
     .then(data => {

@@ -5,7 +5,7 @@ module.exports = app => {
 
   router.post("/", analytics.create);
   router.get("/getByMin/:min", analytics.getByMin);
-  router.get("/getByDate", analytics.getByDate);
+  router.post("/getByDate", analytics.getByDate);
 
   app.use("/api/analytics", router);
 };
