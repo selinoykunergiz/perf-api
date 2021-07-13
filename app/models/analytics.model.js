@@ -5,7 +5,8 @@ module.exports = mongoose => {
       ttfb: String,
       fcp: String,
       domLoad: String,
-      windowLoad: String
+      windowLoad: String,
+      networkTiming: String
     },
     { timestamps: true }
   );

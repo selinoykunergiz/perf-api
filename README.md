@@ -32,7 +32,7 @@ POST /api/analytics
 ```
 
 ```js
-BODY {url, ttfb, fcp, domLoad, windowLoad}
+BODY {url, ttfb, fcp, domLoad, windowLoad, networkTiming }
 ```
 
 Get Data by x minute (dafult 30 min):

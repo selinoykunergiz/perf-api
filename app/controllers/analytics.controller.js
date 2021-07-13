@@ -12,7 +12,8 @@ exports.create = (req, res) => {
     ttfb: req.body.ttfb,
     fcp: req.body.fcp,
     domLoad: req.body.domLoad,
-    windowLoad: req.body.windowLoad
+    windowLoad: req.body.windowLoad,
+    networkTiming: req.body.networkTiming
   });
 
   analytics
